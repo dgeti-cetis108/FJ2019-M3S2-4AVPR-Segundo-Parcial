@@ -1,1 +1,5 @@
-@import "../../node_modules/bulma/css/bulma.css";
+/* Bulma CSS */
+@import "bulma.css";
+
+/* FontAwesome */
+@import "fontawesome/all.css";
