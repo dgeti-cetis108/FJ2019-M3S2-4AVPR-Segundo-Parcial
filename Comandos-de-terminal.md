@@ -103,16 +103,16 @@ $ touch package.json
 # 9. Crear el archivo index.html dentro de src/
 $ touch src/index.html
 
-# 8. Crear los directorios css, images y js dentro de src/
+# 10. Crear los directorios css, images y js dentro de src/
 $ mkdir src/css src/images src/js
 
-# 9. Crear el archivo styles.css dentro de src/css
+# 11. Crear el archivo styles.css dentro de src/css
 $ touch src/css/styles.css
 
-# 10. Crear el archivo logo.png dentro de src/images
+# 12. Crear el archivo logo.png dentro de src/images
 $ touch src/images/logo.png
 
-# 11. Crear el archivo app.js dentro de src/js
+# 13. Crear el archivo app.js dentro de src/js
 $ touch src/js/app.js
 ```
 
