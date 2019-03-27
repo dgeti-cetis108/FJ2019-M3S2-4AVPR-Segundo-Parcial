@@ -19,8 +19,7 @@
 > Existen dos directorios especiales que puedes utilizar con el comando **cd**:
 >
 > 1. `./` representa el directorio actual.
-> 2. `../` representa el directorio inmediato superior al actual.
->    Cuando se ingresa la dirección donde esta ubicado un archivo se conoce como ruta (*PATH*).
+> 2. `../` representa el directorio inmediato superior al actual.<br>Cuando se ingresa la dirección donde esta ubicado un archivo se conoce como ruta (*PATH*).
 > 3. `~` representa el directorio de inicio del usuario con una sesión iniciada.
 
 ***ls: list***<br>Imprime en pantalla todos los archivos y/o directorios existentes en el directorio actual.
@@ -33,7 +32,7 @@
 
 ***rmdir: remove directory***<br>Elimina el directorio indicado. Este comando solo funciona con directorios vacíos.
 
-***touch: remove directory***<br>Utilizado principalmente para cambiar la fecha y hora de última modificación de un archivo, pero si el archivo no existe este comando lo crea.
+***touch: change timestamps***<br>Utilizado principalmente para cambiar la fecha y hora de última modificación de un archivo, pero si el archivo no existe este comando lo crea.
 
 
 
@@ -50,20 +49,20 @@ R. Clint Whaley. (s/f). *Introduction to Linux command line*. Recuperado de <htt
 ### Crear la siguiente estructura de directorios y archivos
 
 ```
-Repositorio
-├── 01-Practica
-│   ├── node_modules
-│   │   └── bulma
-│   │       └── css
+Repositorio/
+├── 01-Practica/
+│   ├── node_modules/
+│   │   └── bulma/
+│   │       └── css/
 │   │           └── bulma.css
 │   ├── package.json
-│   └── src
-│       ├── css
+│   └── src/
+│       ├── css/
 │       │   └── styles.css
-│       ├── images
-│       │   └── logo-sep.png
+│       ├── images/
+│       │   └── logo.png
 │       ├── index.html
-│       └── js
+│       └── js/
 │           └── app.js
 └── README.md
 
