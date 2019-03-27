@@ -10,14 +10,11 @@
 
 ### Comandos comunes
 
-***mkdir: make directory***
-Crea directorios (en Windows comúnmente llamados carpetas 😜).
+***mkdir: make directory***<br>Crea directorios (en Windows comúnmente llamados carpetas 😜).
 
-***pwd: print working directory***
-Muestra donde te encuentras en el sistema de archivos.
+***pwd: print working directory***<br>Muestra donde te encuentras en el sistema de archivos.
 
-***cd: change directory***
-Esta es la forma con la cual te mueves dentro del sistema de archivos.
+***cd: change directory***<br>Esta es la forma con la cual te mueves dentro del sistema de archivos.
 
 > Existen dos directorios especiales que puedes utilizar con el comando **cd**:
 >
@@ -26,23 +23,17 @@ Esta es la forma con la cual te mueves dentro del sistema de archivos.
 >    Cuando se ingresa la dirección donde esta ubicado un archivo se conoce como ruta (*PATH*).
 > 3. `~` representa el directorio de inicio del usuario con una sesión iniciada.
 
-***ls: list***
-Imprime en pantalla todos los archivos y/o directorios existentes en el directorio actual.
+***ls: list***<br>Imprime en pantalla todos los archivos y/o directorios existentes en el directorio actual.
 
-***cp: copy***
-Copia un archivo hacia otro archivo.
+***cp: copy***<br>Copia un archivo hacia otro archivo.
 
-***mv: move***
-Copia un archivo hacia un nuevo archivo ó ruta, y elimina el archivo original.
+***mv: move***<br>Copia un archivo hacia un nuevo archivo ó ruta, y elimina el archivo original.
 
-***rm: remove***
-Elimina permanentemente el(los) archivo(s) proporcionado(s).
+***rm: remove***<br>Elimina permanentemente el(los) archivo(s) proporcionado(s).
 
-***rmdir: remove directory***
-Elimina el directorio indicado. Este comando solo funciona con directorios vacíos.
+***rmdir: remove directory***<br>Elimina el directorio indicado. Este comando solo funciona con directorios vacíos.
 
-***touch: remove directory***
-Utilizado principalmente para cambiar la fecha y hora de última modificación de un archivo, pero si el archivo no existe este comando lo crea.
+***touch: remove directory***<br>Utilizado principalmente para cambiar la fecha y hora de última modificación de un archivo, pero si el archivo no existe este comando lo crea.
 
 
 
@@ -54,7 +45,7 @@ R. Clint Whaley. (s/f). *Introduction to Linux command line*. Recuperado de <htt
 
 
 
-# Práctica (Estructura de sitio web)
+## Práctica (Estructura de sitio web)
 
 ### Crear la siguiente estructura de directorios y archivos
 
@@ -65,15 +56,15 @@ Repositorio
 │   │   └── bulma
 │   │       └── css
 │   │           └── bulma.css
+│   ├── package.json
 │   └── src
 │       ├── css
 │       │   └── styles.css
 │       ├── images
-│       │   └── logo.png
-│       ├── js
-│       │   └── app.js
+│       │   └── logo-sep.png
 │       ├── index.html
-│       └── package.json
+│       └── js
+│           └── app.js
 └── README.md
 
 9 directorios, 7 archivos
@@ -81,7 +72,7 @@ Repositorio
 
 
 
-### Pasos para realizar la estructura
+#### Pasos para realizar la estructura
 
 ```bash
 # 1. Crear el directorio inicial
@@ -93,20 +84,26 @@ $ cd Repositorio
 # 3. Crear el archivo README.md
 $ touch README.md
 
-# 4. Crear los directorios node_modules y src
+# 4. Crear el directorio 01-Practica y ubicarse en éste
+$ mkdir 01-Practica
+$ cd 01-Practica
+
+# 5. Crear los directorios node_modules y src
 $ mkdir node_modules src
 
-# 5. Crear los directorios bulma/css dentro de node_modules
+# 6. Crear los directorios bulma/css dentro de node_modules/
 $ mkdir -p node_modules/bulma/css
 
-# 6. Crear el archivo bulma.css dentro de node_modules/bulma/css
+# 7. Crear el archivo bulma.css dentro de node_modules/bulma/css/
 $ touch node_modules/bulma/css/bulma.css
 
-# 7. Crear los archivos index.html y package.json dentro de src
-$ touch src/index.html
-$ touch src/package.json
+# 8. Crear el archivo package.json dentro de 01-Practica
+$ touch package.json
 
-# 8. Crear los directorios css, images y js dentro de src
+# 9. Crear el archivo index.html dentro de src/
+$ touch src/index.html
+
+# 8. Crear los directorios css, images y js dentro de src/
 $ mkdir src/css src/images src/js
 
 # 9. Crear el archivo styles.css dentro de src/css
