@@ -8,6 +8,74 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    
+    <!-- Usuarios: Nombre*, Apellidos*, Correo*, Telefono, Contraseña* -->
+    <main class="section has-background-danger">
+      <div class="container has-background-info">
+        <div class="column is-6 is-offset-3">
+          <div class="box has-text-centered">
+            <figure class="image is-128x128">
+              <img src="#">
+            </figure>
+            <form>
+              <div class="field is-horizontal">
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control has-icons-left is-expanded">
+                      <input class="input" type="text" name="nombre" id="nombre" required placeholder="Nombre">
+                      <span class="icon is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </p>
+                  </div>
+                  <div class="field">
+                    <p class="control is-expanded">
+                      <input class="input" type="text" name="apellidos" id="apellidos" required placeholder="Apellidos">
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input class="input" type="email" name="correo" id="correo" required placeholder="Correo electrónico">
+                  <span class="icon is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input class="input" type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                  <span class="icon is-left">
+                    <i class="fas fa-phone"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input class="input" type="password" name="contrasena1" id="contrasena1" required placeholder="Escribe una contraseña">
+                  <span class="icon is-left">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input class="input" type="password" name="contrasena2" id="contrasena2" required placeholder="Vuelve a escribir la contraseña">
+                  <span class="icon is-left">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </div>
+              </div>
+              <button class="button is-link is-medium" type="submit">
+                <span>
+                  <i class="fas fa-save"></i>
+                  Guardar
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
