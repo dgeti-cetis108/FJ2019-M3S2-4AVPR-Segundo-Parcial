@@ -17,11 +17,15 @@ let sql = "select * from users"
 // ejecutando la consulta
 db.all(sql, [], (err, rows) => {
   if (err) {
-    console.log(err.message)
+    console.log(`Error al ejecutar la consulta: ${sql}
+    ${err.message}`)
   }
-  rows.forEach((row) => {
-    console.log(`Nombre: ${row.firstname} Apellidos: ${row.lastname}`)
-  })
+  
+  if(rows) {
+    rows.forEach((row) => {
+      console.log(`Nombre: ${row.firstname} Apellidos: ${row.lastname}`)
+    })
+  }
 })
 
 
